@@ -43,7 +43,7 @@ def closePPPD():
 def checkForFix():
 	print "checking for fix"
 	# Start the serial connection
-	ser=serial.Serial('/dev/ttyAMA0', 115200, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=1)
+	ser=serial.Serial('/dev/serial0', 115200, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=1)
 	# Turn on the GPS
 	ser.write("AT+CGNSPWR=1\r")
 	ser.write("AT+CGNSPWR?\r")
@@ -71,7 +71,7 @@ def checkForFix():
 # Read the GPS data for Latitude and Longitude
 def getCoord():
 	# Start the serial connection
-	ser=serial.Serial('/dev/ttyAMA0', 115200, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=1)
+	ser=serial.Serial('/dev/serial0', 115200, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=1)
 	ser.write("AT+CGNSINF\r")
 	while True:
 		response = ser.readline()
