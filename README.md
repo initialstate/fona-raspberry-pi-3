@@ -1,6 +1,6 @@
 # Cellular & GPS Enabled Pi 3: Fona + Pi 3
 
-<img src="https://cloud.githubusercontent.com/assets/10930201/17076350/319370a0-5065-11e6-9124-49a853b3ece5.png" width="100%">
+![fonadashboardpi3](https://cloud.githubusercontent.com/assets/10930201/25248572/5b767dc8-25d4-11e7-954d-b702085bbc95.png)
 
 What if your Raspberry Pi 3 could access internet services from anywhere? What if your Fona Cellular GSM and GPS breakout had the brains of a full Linux computer behind it? What if you could access the Fona's cellular capabilities and GPS data from a Raspberry Pi _at the same time_?
 
